@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de Caracteres</title>
+</head>
+<body>
+    <header>
+    <h1>Contador de Caracteres</h1>
+    <p class="muted">Cuenta caracteres, palabras, oraciones y párrafos en tiempo real. Lectura estimada: 200 palabras/min.</p>
+    </header>
+
+
+     <section class="editor">
+            <div class="controls">
+                <button id="sampleBtn" aria-label="Texto de ejemplo">Ejemplo</button>
+                <button id="clearBtn">Limpiar</button>
+               
+            </div>
+
+            <textarea id="inputText" placeholder="Escribe o pega aquí tu texto..." aria-label="Área de texto"></textarea>
+        </section>
+     <aside class="stats" aria-label="Estadísticas" aria-live="polite">
+            <div class="stat">
+                <span class="label">Caracteres (total)</span>
+                <strong id="charCount">0</strong>
+            </div>
+            <div class="stat">
+                <span class="label">Caracteres (sin espacios)</span>
+                <strong id="charNoSpace">0</strong>
+            </div>
+            <div class="stat">
+                <span class="label">Palabras</span>
+                <strong id="wordCount">0</strong>
+            </div>
+            <div class="stat">
+                <span class="label">Oraciones</span>
+                <strong id="sentenceCount">0</strong>
+            </div>
+            <div class="stat">
+                <span class="label">Párrafos</span>
+                <strong id="paragraphCount">0</strong>
+            </div>
+            <div class="stat">
+                <span class="label">Tiempo estimado (200 wpm)</span>
+                <strong id="readTime">0s</strong>
+            </div>
+        </aside>
+</body>
+</html>
