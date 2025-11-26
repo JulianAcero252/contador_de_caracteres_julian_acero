@@ -89,9 +89,8 @@ textarea {
   color: #000;
 }
 
-/* ===========================
-   RESPONSIVE PARA CELULAR
-   =========================== */
+/* RESPONSIVE PARA CELULAR*/
+
 @media (max-width: 600px) {
   
   body {
